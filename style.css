@@ -1,0 +1,51 @@
+h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #1B5700;
+    text-align: center;
+}
+h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #1B5700;
+    text-align: center;
+}
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+td {
+    font-size: 12px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+body {
+    background-color: #F0EEE9;
+}
+.stempel {
+    margin-left: 5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #8BB574;
+    width: 90%;
+    height: 750px;
+    padding-left: 5%;
+}
+
+.abzeichen {
+    margin-left: 5%;
+    background-color: #8BB574;
+    width: 90%;
+    height: 200px;
+    padding-left: 5%;
+    padding-top: 0.5%;
+}
+.done {
+    background-color: #1B5700;
+    color: #F0EEE9;
+    text-decoration: line-through;
+}
+.abzeichen_done {
+    height: 100px;
+}
+.abzeichen_undone {
+    filter: grayscale(100%);
+    height: 100px;
+}

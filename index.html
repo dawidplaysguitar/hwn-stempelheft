@@ -13,35 +13,62 @@ src="js/auth.js">
 <body>
     <div>
         <h2>Abzeichenfortschritt</h2>
-        <table class="abzeichen">
-            <thead>
-                <td><img src="Assets/Grafik/Bronze.png" alt="Bronzeabzeichen" class="abzeichen_done"></td>
-                <td><img src="Assets/Grafik/Silber.png" alt="Silberabzeichen" class="abzeichen_done"></td>
-                <td><img src="Assets/Grafik/Gold.png" alt="Goldabzeichen" class="abzeichen_undone"></td>
-                <td><img src="Assets/Grafik/Wanderkoenig.png" alt="Wanderkönig Abzeichen" class="abzeichen_undone"></td>
-                <td><img src="Assets/Grafik/Rucksack.png" alt="Kaiserrucksack Abzeichen" class="abzeichen_undone"></td>
-                <td><img src="Assets/Grafik/Schuh.png" alt="Kaiserwanderschuh Abzeichen" class="abzeichen_undone"></td>
-                <td><img src="Assets/Grafik/Prinz.png" alt="Wanderprinz:essin Abzeichen" class="abzeichen_done"></td>
-                <td><img src="Assets/Grafik/Steiger.png" alt="Wandersteiger Abzeichen" class="abzeichen_undone"></td>
-                <td><img src="Assets/Grafik/Kaiser.png" alt="Wanderkaiser Abzeichen" class="abzeichen_undone"></td>
-            </thead>
-            <thead>
-                <td>Erreicht am: <br>15.11.2025</td>
-                <td>Erreicht am: <br>21.06.2026</td>
-                <td>Erreicht am: ~</td>
-                <td>Erreicht am: ~</td>
-                <td>Erreicht am: ~</td>
-                <td>Erreicht am: ~</td>
-                <td>Erreicht am: <br>15.11.2025</td>
-                <td>Erreicht am: ~</td>
-                <td>Erreicht am: ~</td>
-            </thead>
-        </table>
+    <div class="section-card">
+        <div class="abzeichen-grid">
+              <div class="abzeichen-card">
+                <img src="Assets/Grafik/Bronze.png" alt="Bronzeabzeichen" class="abzeichen_done">
+                <p>Erreicht am: <br>15.11.2025</p>
+              </div>
+              <div class="abzeichen-card">
+                <img src="Assets/Grafik/Silber.png" alt="Silberabzeichen" class="abzeichen_done">
+                <p>Erreicht am: <br>21.06.2026</p>
+              </div>
+               <div class="abzeichen-card">
+                <img src="Assets/Grafik/Gold.png" alt="Goldabzeichen" class="abzeichen_undone">
+                <p>Erreicht am: <br>~</p>
+              </div>
+              <div class="abzeichen-card">
+                <img src="Assets/Grafik/Wanderkoenig.png" alt="Wanderkönig Abzeichen" class="abzeichen_undone">
+                <p>Erreicht am: <br>~</p>
+              </div>
+              <div class="abzeichen-card">
+                <img src="Assets/Grafik/Rucksack.png" alt="Kaiserrucksack Abzeichen" class="abzeichen_undone">
+                <p>Erreicht am: <br>~</p>
+              </div>
+              <div class="abzeichen-card">
+                <img src="Assets/Grafik/Schuh.png" alt="Kaiserwanderschuh Abzeichen" class="abzeichen_undone">
+                <p>Erreicht am: <br>~</p>
+              </div>
+              <div class="abzeichen-card">
+                <img src="Assets/Grafik/Prinz.png" alt="Wanderprinz:essin Abzeichen" class="abzeichen_done">
+                <p>Erreicht am: <br>16.11.2025</p>
+              </div>
+               <div class="abzeichen-card">
+                <img src="Assets/Grafik/Steiger.png" alt="Wandersteiger Abzeichen" class="abzeichen_undone">
+                <p>Erreicht am: <br>~</p>
+              </div>
+                <div class="abzeichen-card">
+                <img src="Assets/Grafik/Kaiser.png" alt="Wanderkaiser Abzeichen" class="abzeichen_undone">
+                <p>Erreicht am: <br>~</p>
+              </div>
     </div>
-    
+    </div>
+      <h2>Stempel</h2>
+      <h3>Stempel gesammelt: 19 von 222</h3>
+      <div class="section-card">
+      <div
+            id="stempel-grid"
+            class="stempel-grid">
+            </div>
+    </div>
+    <!-- <div class="stempel-grid">
+            <div class="stempel-item done">1</div>
+            <div class="stempel-item">2</div>
+            <div class="stempel-item">3</div>
+
+</div>
     <div>
-        <h2>Stempel</h2>
-        <h3>Stempel gesammelt: 19 von 222</h3>
+        
         <table class="stempel">
             <thead>
                 <td class="done">1</td>
@@ -312,6 +339,7 @@ src="js/auth.js">
                 <td>222</td>
             </thead>
         </table>
+        -->
     </div>
 
     <script type="module">
@@ -337,5 +365,6 @@ src="js/auth.js">
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
 </script>
+<script src="js/stempel.js"></script>
 </body>
 </html>

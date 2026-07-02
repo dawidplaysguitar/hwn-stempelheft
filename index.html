@@ -5,6 +5,7 @@ type="module"
 src="js/auth.js">
 </script>
 <head>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
@@ -16,45 +17,45 @@ src="js/auth.js">
     <div class="section-card">
         <div class="abzeichen-grid">
               <div class="abzeichen-card">
-                <img src="Assets/Grafik/Bronze.png" alt="Bronzeabzeichen" class="abzeichen_done">
+                <img src="Assets/Grafik/Bronze.png" alt="Bronzeabzeichen" class="abzeichen_done" id="Bronzeabzeichen">
                 <p>Erreicht am: <br>15.11.2025</p>
               </div>
               <div class="abzeichen-card">
-                <img src="Assets/Grafik/Silber.png" alt="Silberabzeichen" class="abzeichen_done">
+                <img src="Assets/Grafik/Silber.png" alt="Silberabzeichen" class="abzeichen_done" id="Silberabzeichen">
                 <p>Erreicht am: <br>21.06.2026</p>
               </div>
                <div class="abzeichen-card">
-                <img src="Assets/Grafik/Gold.png" alt="Goldabzeichen" class="abzeichen_undone">
+                <img src="Assets/Grafik/Gold.png" alt="Goldabzeichen" class="abzeichen_undone" id="Goldabzeichen" title="x">
                 <p>Erreicht am: <br>~</p>
               </div>
               <div class="abzeichen-card">
-                <img src="Assets/Grafik/Wanderkoenig.png" alt="Wanderkönig Abzeichen" class="abzeichen_undone">
+                <img src="Assets/Grafik/Wanderkoenig.png" alt="Wanderkönig Abzeichen" class="abzeichen_undone" id="Wanderkoenig" title="x">
                 <p>Erreicht am: <br>~</p>
               </div>
               <div class="abzeichen-card">
-                <img src="Assets/Grafik/Rucksack.png" alt="Kaiserrucksack Abzeichen" class="abzeichen_undone">
+                <img src="Assets/Grafik/Rucksack.png" alt="Kaiserrucksack Abzeichen" class="abzeichen_undone" id="Kaiserrucksack" title="x">
                 <p>Erreicht am: <br>~</p>
               </div>
               <div class="abzeichen-card">
-                <img src="Assets/Grafik/Schuh.png" alt="Kaiserwanderschuh Abzeichen" class="abzeichen_undone">
+                <img src="Assets/Grafik/Schuh.png" alt="Kaiserwanderschuh Abzeichen" class="abzeichen_undone" id="Kaiserwanderschuh" title="x">
                 <p>Erreicht am: <br>~</p>
               </div>
               <div class="abzeichen-card">
-                <img src="Assets/Grafik/Prinz.png" alt="Wanderprinz:essin Abzeichen" class="abzeichen_done">
-                <p>Erreicht am: <br>16.11.2025</p>
+                <img src="Assets/Grafik/Prinz.png" alt="Wanderprinz:essin Abzeichen" class="abzeichen_done" id="Prinz" title="x">
+                <p>Erreicht am: <br>15.11.2025</p>
               </div>
                <div class="abzeichen-card">
-                <img src="Assets/Grafik/Steiger.png" alt="Wandersteiger Abzeichen" class="abzeichen_undone">
+                <img src="Assets/Grafik/Steiger.png" alt="Wandersteiger Abzeichen" class="abzeichen_undone" id="Steiger" title="x">
                 <p>Erreicht am: <br>~</p>
               </div>
                 <div class="abzeichen-card">
-                <img src="Assets/Grafik/Kaiser.png" alt="Wanderkaiser Abzeichen" class="abzeichen_undone">
+                <img src="Assets/Grafik/Kaiser.png" alt="Wanderkaiser Abzeichen" class="abzeichen_undone" id="Kaiser" title="x">
                 <p>Erreicht am: <br>~</p>
               </div>
     </div>
     </div>
       <h2>Stempel</h2>
-      <h3>Stempel gesammelt: 19 von 222</h3>
+      <h3 id="stamp-counter"></h3>
       <div class="section-card">
       <div
             id="stempel-grid"
@@ -62,6 +63,8 @@ src="js/auth.js">
             </div>
     </div>
     </div>
+    <!--Karte-->
+    <div id="map"></div>
 
     <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/12.15.0/firebase-app.js";
@@ -81,5 +84,14 @@ src="js/auth.js">
   const analytics = getAnalytics(app);
 </script>
 <script src="js/stempel.js"></script>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script
+    type="module"
+    src="./js/script.js">
+</script>
+<script
+ type="module"
+ src="./js/map.js">
+</script>
 </body>
 </html>

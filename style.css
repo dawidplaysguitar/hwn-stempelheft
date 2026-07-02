@@ -21,6 +21,20 @@ td {
 body {
     background-color: #F0EEE9;
 }
+#map {
+    width: 90%;
+    margin-top: 5px;
+    margin-left: 5%;
+    height: 600px;
+    border-radius: 20px;
+}
+.badge-info {
+    display: none;
+}
+
+.badge:hover .badge-info {
+    display: block;
+}
 .section-card {
     width: 90%;
     margin: 0 auto;
@@ -105,6 +119,9 @@ body {
   }
   .abzeichen {
         width: 100%;
+    }
+     #map {
+        height: 400px;
     }
 
   .abzeichen td {

@@ -1,9 +1,0 @@
-- Automatisches Ausloggen
-- Button für Ausloggen
-- Login-Seite schöner machen (responsive design) + Grafik
-- Favicon (Harzer Wandernadel Logo)
-- Karte mit besuchten (Grüne Markierung) und nicht besuchten (graue Markierung) Orten
-	- Mit Nummer, Koordinaten, Name und Status ob besucht oder nicht
-- Automatische Zusammenzählung der gesammelten Stempel
-- Hover über Abzeichen für % Fortschritt und absolute zahl die benötigt wird für das Abzeichen
-- Möglichkeit Stempel im Browser einzutragen

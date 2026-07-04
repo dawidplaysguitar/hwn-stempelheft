@@ -2,42 +2,44 @@
 <html lang="de">
 
 <head>
-
     <meta charset="UTF-8">
+    <title>Login</title>
 
-    <title>
-        Login
-    </title>
-
+    <link rel="stylesheet" href="login.css">
 </head>
 
 <body>
 
-    <h1>
-        Harzer Wandernadel
-    </h1>
+    <div class="login-card">
 
-    <input
-        id="email"
-        type="email"
-        placeholder="E-Mail">
+        <img
+            src="Assets/Grafik/login-illustration.png"
+            alt="Harz Wanderung"
+            class="hero-image">
 
-    <br><br>
+        <h1>Willkommen zurück!</h1>
 
-    <input
-        id="password"
-        type="password"
-        placeholder="Passwort">
+        <p class="subtitle">
+            Für dich. Für uns. Für unsere Abenteuer. ❤️
+        </p>    
 
-    <br><br>
+        <input
+            id="email"
+            type="email"
+            placeholder="E-Mail-Adresse">
 
-    <button id="login-btn">
+        <input
+            id="password"
+            type="password"
+            placeholder="Passwort">
 
-        Anmelden
+        <button id="login-btn">
+            Anmelden
+        </button>
 
-    </button>
+        <p id="error"></p>
 
-    <p id="error"></p>
+    </div>
 
     <script
         type="module"

@@ -1,6 +1,6 @@
 const completedStamps =
 [1,6,7,15,19,27,28,30,76,77,78,80,81,82,88,
-101,103,104,109,112,148,151];
+101,103,104,109,112,123,148,151,154,155];
 
 const container =
 document.getElementById("stempel-grid");
